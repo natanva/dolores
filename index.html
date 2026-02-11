@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolores Seaguer | Bureaucracy Fixer in Spain</title>
+    <style>
+        /* RESET & BASICS */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #111111;
+            --accent-color: #000000; /* Negro puro para botones */
+            --gray-light: #f4f4f4;
+            --gray-text: #666666;
+            --spacing-unit: 80px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* TYPOGRAPHY */
+        h1, h2, h3 {
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem); /* Responsive huge text */
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid var(--text-color);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .punchline {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #333;
+            max-width: 650px;
+        }
+
+        /* LAYOUT CONTAINERS */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: var(--spacing-unit) 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* HEADER */
+        header {
+            padding: 40px 0;
+        }
+        .logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+            letter-spacing: -0.02em;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            padding: 100px 0;
+        }
+        .hero-sub {
+            font-size: 1.4rem;
+            color: var(--gray-text);
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        /* SPLIT LAYOUT (The "Alberto" Style) */
+        .split-section {
+            display: grid;
+            grid-template-columns: 1fr 2fr; /* 1 parte título, 2 partes contenido */
+            gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .split-section {
+                grid-template-columns: 1fr; /* Stack on mobile */
+                gap: 20px;
+            }
+            :root {
+                --spacing-unit: 50px;
+            }
+        }
+
+        /* LISTS */
+        ul.services-list {
+            list-style: none;
+            margin-top: 30px;
+        }
+        ul.services-list li {
+            margin-bottom: 25px;
+            padding-left: 20px;
+            border-left: 3px solid var(--text-color);
+        }
+        ul.services-list strong {
+            display: block;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        /* BUTTONS */
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #fff;
+            padding: 18px 35px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #333;
+            transform: translateY(-2px);
+        }
+
+        /* FORM */
+        .contact-form {
+            background-color: var(--gray-light);
+            padding: 40px;
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            font-family: inherit;
+            font-size: 1rem;
+            background: #fff;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: 2px solid var(--text-color);
+            border-color: transparent;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--gray-text);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">Dolores Seaguer | Bureaucracy Fixer</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Spain is Paradise.<br>The Bureaucracy is a Nightmare.</h1>
+            <p class="hero-sub">Don't let a missing piece of paper turn your Spanish dream into a legal deadline.</p>
+            <a href="#contact" class="btn">Fix My Paperwork</a>
+        </div>
+    </section>
+
+    <section>
+        <div class="container split-section">
+            <div class="section-title">
+                <h2>The Reality</h2>
+            </div>
+            <div class="section-content">
+                <span class="punchline">Confusion. Rejection. Queues.</span>
+                <p>You didn’t move to Spain to spend your mornings refreshing a broken government website at 8:00 AM.</p>
+                <p>Right now, you aren't living. You are waiting. Waiting for a TIE appointment that never appears available. Worrying about the expiration date on your visa. Wondering why getting a simple <em>Padrón</em> feels like an interrogation.</p>
+                <p><strong>Let’s be honest: The system is broken.</strong></p>
+                <p>It’s a knot in your stomach every time you face a civil servant who doesn't speak English. It’s not your fault. But if you don't know the unwritten rules, you lose. And the cost is your legal status.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container split-section">
+            <div class="section-title">
+                <h2>My Role</h2>
+            </div>
+            <div class="section-content">
+                <span class="punchline">Insider. Navigator. Protector.</span>
+                <p>I am not a faceless agency. I am your shortcut through the red tape. While you see a closed door, I see a process. I know how the system works from the inside out.</p>
+                
+                <ul class="services-list">
+                    <li>
+                        <strong>The Impossible Appointments</strong>
+                        You see "No appointments available". I see a challenge. I secure slots for TIE, EU Certificates, and biometrics when no one else can. Even against the "black market" of appointments.
+                    </li>
+                    <li>
+                        <strong>The "Insider" Checklist</strong>
+                        No generic advice. I tell you exactly what documents you need, the specific validity dates, and the translations required so you never get turned away at the door.
+                    </li>
+                    <li>
+                        <strong>Digital Identity & Daily Life</strong>
+                        From setting up your Cl@ve PIN and Digital Certificate to getting your SIP card (healthcare) and exchanging your driving licence.
+                    </li>
+                    <li>
+                        <strong>The "Hand-Holding" Service</strong>
+                        Paperwork is one thing; standing in that office is another. I can accompany you, translate, and argue your case in person. No awkward silences. Just results.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container split-section">
+            <div class="section-title">
+                <h2>Your Life</h2>
+            </div>
+            <div class="section-content">
+                <span class="punchline">Legal. Sorted. Safe.</span>
+                <p>You can spend another week scouring forums, asking on Facebook groups, and waking up early to refresh the appointment page. You can risk getting to the counter and being rejected.</p>
+                <p>Or you can hand this burden over to me today.</p>
+                <p>Let’s get you legal, let’s get you safe, and let’s get you back to enjoying the Spain you came here for.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container split-section">
+            <div class="section-title">
+                <h2>Let's Talk</h2>
+            </div>
+            <div class="section-content">
+                <span class="punchline">Tell me what's keeping you awake.</span>
+                <p>Fill in the form below and I'll tell you how we can fix it.</p>
+                
+                <form class="contact-form" action="mailto:tuemail@ejemplo.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Jane Doe">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="jane@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="status">I am currently...</label>
+                        <select id="status" name="status">
+                            <option value="Non-EU">Non-EU Citizen (UK, USA, etc)</option>
+                            <option value="EU">EU Citizen</option>
+                            <option value="Family">Family Member of EU Citizen</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="needs">I need help with (Select main issue)</label>
+                        <select id="needs" name="needs">
+                            <option value="TIE/Residency">TIE Appointment / Residency</option>
+                            <option value="Licence">Driving Licence Exchange</option>
+                            <option value="Healthcare">SIP Card / Healthcare</option>
+                            <option value="Digital">Cl@ve PIN / Digital Cert</option>
+                            <option value="Everything">I am lost (Help with everything)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Briefly describe your situation</label>
+                        <textarea id="message" name="message" rows="4" placeholder="e.g. I have been trying to get an appointment for 3 weeks..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" style="width:100%">Send to Dolores</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Dolores Seaguer. All rights reserved.<br>Bureaucracy Fixer & Expat Services.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
