@@ -9,8 +9,11 @@
         :root {
             --bg-color: #ffffff;
             --text-color: #111111;
-            --accent-color: #000000; /* Negro puro para botones */
-            --gray-light: #f4f4f4;
+            /* El nuevo color Turquesa de Dolores */
+            --accent-color: #00B5AD; 
+            /* Un tono un poco más oscuro para cuando pasas el ratón por encima */
+            --accent-hover: #00968F; 
+            --gray-light: #f8f9fa;
             --gray-text: #666666;
             --spacing-unit: 80px;
         }
@@ -46,7 +49,8 @@
             text-transform: uppercase;
             letter-spacing: 0.1em;
             margin-bottom: 10px;
-            border-bottom: 2px solid var(--text-color);
+            /* Detalle Turquesa: El subrayado del título */
+            border-bottom: 2px solid var(--accent-color);
             display: inline-block;
             padding-bottom: 5px;
         }
@@ -56,6 +60,8 @@
             font-weight: 700;
             margin-bottom: 20px;
             display: block;
+            /* Detalle Turquesa: Las frases de impacto */
+            color: var(--accent-color);
         }
 
         p {
@@ -85,6 +91,9 @@
             font-weight: 700;
             font-size: 1.2rem;
             letter-spacing: -0.02em;
+        }
+        .logo span {
+             color: var(--accent-color);
         }
 
         /* HERO SECTION */
@@ -123,7 +132,8 @@
         ul.services-list li {
             margin-bottom: 25px;
             padding-left: 20px;
-            border-left: 3px solid var(--text-color);
+            /* Detalle Turquesa: La línea vertical de la lista */
+            border-left: 3px solid var(--accent-color);
         }
         ul.services-list strong {
             display: block;
@@ -134,6 +144,7 @@
         /* BUTTONS */
         .btn {
             display: inline-block;
+            /* Detalle Turquesa: Fondo del botón */
             background-color: var(--accent-color);
             color: #fff;
             padding: 18px 35px;
@@ -144,10 +155,14 @@
             letter-spacing: 0.05em;
             transition: all 0.3s ease;
             margin-top: 20px;
+            border: none;
+            cursor: pointer;
         }
         .btn:hover {
-            background-color: #333;
+            /* Detalle Turquesa: Hover un poco más oscuro */
+            background-color: var(--accent-hover);
             transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 181, 173, 0.3); /* Sombra turquesa suave */
         }
 
         /* FORM */
@@ -155,6 +170,7 @@
             background-color: var(--gray-light);
             padding: 40px;
             margin-top: 20px;
+            border-radius: 4px;
         }
         .form-group {
             margin-bottom: 20px;
@@ -164,18 +180,22 @@
             margin-bottom: 8px;
             font-weight: 600;
             font-size: 0.9rem;
+            color: var(--text-color);
         }
         input, select, textarea {
             width: 100%;
             padding: 15px;
-            border: 1px solid #ddd;
+            border: 2px solid #e1e1e1; /* Borde inicial más sutil */
             font-family: inherit;
             font-size: 1rem;
             background: #fff;
+            transition: border-color 0.3s;
+            border-radius: 4px;
         }
+        /* Detalle Turquesa: Cuando haces clic en el formulario */
         input:focus, select:focus, textarea:focus {
-            outline: 2px solid var(--text-color);
-            border-color: transparent;
+            outline: none;
+            border-color: var(--accent-color);
         }
 
         /* FOOTER */
@@ -191,7 +211,7 @@
 
     <header>
         <div class="container">
-            <div class="logo">Dolores Seaguer | Bureaucracy Fixer</div>
+            <div class="logo">Dolores Seaguer | <span>Bureaucracy Fixer</span></div>
         </div>
     </header>
 
@@ -272,7 +292,10 @@
                 <span class="punchline">Tell me what's keeping you awake.</span>
                 <p>Fill in the form below and I'll tell you how we can fix it.</p>
                 
-                <form class="contact-form" action="mailto:tuemail@ejemplo.com" method="post" enctype="text/plain">
+                <form class="contact-form" action="https://formspree.io/f/TU_CODIGO_AQUI" method="POST">
+                    
+                    <input type="hidden" name="_subject" value="Nuevo Lead desde la Web (Dolores Fixer)">
+
                     <div class="form-group">
                         <label for="name">Full Name</label>
                         <input type="text" id="name" name="name" required placeholder="Jane Doe">
@@ -280,7 +303,7 @@
                     
                     <div class="form-group">
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required placeholder="jane@example.com">
+                        <input type="email" id="email" name="_replyto" required placeholder="jane@example.com">
                     </div>
 
                     <div class="form-group">
