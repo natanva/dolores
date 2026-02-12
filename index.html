@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dolores Seaguer | Bureaucracy Fixer in Spain</title>
+    <title>Dolores Seaguer | Bureaucracy Fixer</title>
     <style>
         /* RESET & BASICS */
         :root {
             --bg-color: #ffffff;
             --text-color: #111111;
-            /* El nuevo color Turquesa de Dolores */
+            /* Azul Turquesa de Dolores */
             --accent-color: #00B5AD; 
-            /* Un tono un poco más oscuro para cuando pasas el ratón por encima */
             --accent-hover: #00968F; 
             --gray-light: #f8f9fa;
-            --gray-text: #666666;
+            --gray-text: #555555;
             --spacing-unit: 80px;
         }
 
@@ -28,45 +27,43 @@
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
-            line-height: 1.6;
+            line-height: 1.5;
             -webkit-font-smoothing: antialiased;
         }
 
         /* TYPOGRAPHY */
         h1, h2, h3 {
             font-weight: 700;
-            letter-spacing: -0.03em;
+            letter-spacing: -0.02em;
             line-height: 1.1;
         }
 
         h1 {
-            font-size: clamp(2.5rem, 5vw, 4.5rem); /* Responsive huge text */
+            font-size: clamp(2.5rem, 5vw, 4rem); 
             margin-bottom: 20px;
         }
 
         h2 {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.05em;
             margin-bottom: 10px;
-            /* Detalle Turquesa: El subrayado del título */
             border-bottom: 2px solid var(--accent-color);
             display: inline-block;
             padding-bottom: 5px;
         }
 
         .punchline {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 700;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             display: block;
-            /* Detalle Turquesa: Las frases de impacto */
             color: var(--accent-color);
         }
 
         p {
-            font-size: 1.1rem;
-            margin-bottom: 20px;
+            font-size: 1.05rem;
+            margin-bottom: 15px;
             color: #333;
             max-width: 650px;
         }
@@ -98,25 +95,25 @@
 
         /* HERO SECTION */
         .hero {
-            padding: 100px 0;
+            padding: 80px 0 100px 0;
         }
         .hero-sub {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             color: var(--gray-text);
             margin-bottom: 40px;
-            font-weight: 300;
+            font-weight: 400;
         }
 
-        /* SPLIT LAYOUT (The "Alberto" Style) */
+        /* SPLIT LAYOUT */
         .split-section {
             display: grid;
-            grid-template-columns: 1fr 2fr; /* 1 parte título, 2 partes contenido */
+            grid-template-columns: 1fr 2fr; 
             gap: 40px;
         }
 
         @media (max-width: 768px) {
             .split-section {
-                grid-template-columns: 1fr; /* Stack on mobile */
+                grid-template-columns: 1fr;
                 gap: 20px;
             }
             :root {
@@ -127,42 +124,37 @@
         /* LISTS */
         ul.services-list {
             list-style: none;
-            margin-top: 30px;
+            margin-top: 20px;
         }
         ul.services-list li {
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             padding-left: 20px;
-            /* Detalle Turquesa: La línea vertical de la lista */
             border-left: 3px solid var(--accent-color);
         }
         ul.services-list strong {
             display: block;
             font-size: 1.1rem;
-            margin-bottom: 5px;
+            margin-bottom: 4px;
         }
 
         /* BUTTONS */
         .btn {
             display: inline-block;
-            /* Detalle Turquesa: Fondo del botón */
             background-color: var(--accent-color);
             color: #fff;
-            padding: 18px 35px;
+            padding: 16px 32px;
             font-size: 1rem;
             font-weight: 600;
             text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            transition: all 0.3s ease;
-            margin-top: 20px;
+            transition: all 0.2s ease;
+            margin-top: 10px;
             border: none;
             cursor: pointer;
+            border-radius: 2px;
         }
         .btn:hover {
-            /* Detalle Turquesa: Hover un poco más oscuro */
             background-color: var(--accent-hover);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 181, 173, 0.3); /* Sombra turquesa suave */
+            transform: translateY(-1px);
         }
 
         /* FORM */
@@ -184,18 +176,19 @@
         }
         input, select, textarea {
             width: 100%;
-            padding: 15px;
-            border: 2px solid #e1e1e1; /* Borde inicial más sutil */
+            padding: 12px;
+            border: 1px solid #ccc;
             font-family: inherit;
             font-size: 1rem;
             background: #fff;
             transition: border-color 0.3s;
-            border-radius: 4px;
+            border-radius: 2px;
         }
-        /* Detalle Turquesa: Cuando haces clic en el formulario */
         input:focus, select:focus, textarea:focus {
             outline: none;
             border-color: var(--accent-color);
+            border-width: 2px;
+            padding: 11px; /* Adjust for border width change */
         }
 
         /* FOOTER */
@@ -211,29 +204,28 @@
 
     <header>
         <div class="container">
-            <div class="logo">Dolores Seaguer | <span>Bureaucracy Fixer</span></div>
+            <div class="logo">Dolores Seaguer | <span>The Fixer</span></div>
         </div>
     </header>
 
     <section class="hero">
         <div class="container">
-            <h1>Spain is Paradise.<br>The Bureaucracy is a Nightmare.</h1>
-            <p class="hero-sub">Don't let a missing piece of paper turn your Spanish dream into a legal deadline.</p>
-            <a href="#contact" class="btn">Fix My Paperwork</a>
+            <h1>Spanish Paperwork.<br>Sorted.</h1>
+            <p class="hero-sub">You can’t get an appointment. You don’t speak the language. I fix both.</p>
+            <a href="#contact" class="btn">Get it Sorted</a>
         </div>
     </section>
 
     <section>
         <div class="container split-section">
             <div class="section-title">
-                <h2>The Reality</h2>
+                <h2>The Situation</h2>
             </div>
             <div class="section-content">
-                <span class="punchline">Confusion. Rejection. Queues.</span>
-                <p>You didn’t move to Spain to spend your mornings refreshing a broken government website at 8:00 AM.</p>
-                <p>Right now, you aren't living. You are waiting. Waiting for a TIE appointment that never appears available. Worrying about the expiration date on your visa. Wondering why getting a simple <em>Padrón</em> feels like an interrogation.</p>
-                <p><strong>Let’s be honest: The system is broken.</strong></p>
-                <p>It’s a knot in your stomach every time you face a civil servant who doesn't speak English. It’s not your fault. But if you don't know the unwritten rules, you lose. And the cost is your legal status.</p>
+                <span class="punchline">Bureaucracy is slow.</span>
+                <p>Spanish administration is infamous for a reason. Websites crash, appointments are non-existent, and the rules seem to change depending on who is sitting at the desk.</p>
+                <p>Trying to navigate this alone without fluent Spanish is inefficient. You risk being turned away for a minor error, forcing you to start the process all over again.</p>
+                <p><strong>You don't need a "dream"; you need a stamp on your document.</strong></p>
             </div>
         </div>
     </section>
@@ -241,28 +233,28 @@
     <section>
         <div class="container split-section">
             <div class="section-title">
-                <h2>My Role</h2>
+                <h2>What I Do</h2>
             </div>
             <div class="section-content">
-                <span class="punchline">Insider. Navigator. Protector.</span>
-                <p>I am not a faceless agency. I am your shortcut through the red tape. While you see a closed door, I see a process. I know how the system works from the inside out.</p>
+                <span class="punchline">Straightforward solutions.</span>
+                <p>I am not a lawyer. I am a specialist in getting things done. I know the system, I know the offices, and I know how to secure appointments that don't appear online.</p>
                 
                 <ul class="services-list">
                     <li>
-                        <strong>The Impossible Appointments</strong>
-                        You see "No appointments available". I see a challenge. I secure slots for TIE, EU Certificates, and biometrics when no one else can. Even against the "black market" of appointments.
+                        <strong>Appointments (Cita Previa)</strong>
+                        Securing slots for TIE (Non-EU), EU Certificates, and Biometrics. I monitor the system so you don't have to waste your mornings refreshing the page.
                     </li>
                     <li>
-                        <strong>The "Insider" Checklist</strong>
-                        No generic advice. I tell you exactly what documents you need, the specific validity dates, and the translations required so you never get turned away at the door.
+                        <strong>Document Review</strong>
+                        I provide a precise checklist for your specific case. I ensure your documents, dates, and translations are correct <em>before</em> you walk into the office.
                     </li>
                     <li>
-                        <strong>Digital Identity & Daily Life</strong>
-                        From setting up your Cl@ve PIN and Digital Certificate to getting your SIP card (healthcare) and exchanging your driving licence.
+                        <strong>Digital Admin</strong>
+                        Setup of Cl@ve PIN and Digital Certificate to handle future taxes and registry issues online.
                     </li>
                     <li>
-                        <strong>The "Hand-Holding" Service</strong>
-                        Paperwork is one thing; standing in that office is another. I can accompany you, translate, and argue your case in person. No awkward silences. Just results.
+                        <strong>In-Person Accompaniment</strong>
+                        I can attend the appointment with you. I speak to the officials, handle any misunderstandings on the spot, and ensure the process is completed.
                     </li>
                 </ul>
             </div>
@@ -272,13 +264,12 @@
     <section>
         <div class="container split-section">
             <div class="section-title">
-                <h2>Your Life</h2>
+                <h2>The Result</h2>
             </div>
             <div class="section-content">
-                <span class="punchline">Legal. Sorted. Safe.</span>
-                <p>You can spend another week scouring forums, asking on Facebook groups, and waking up early to refresh the appointment page. You can risk getting to the counter and being rejected.</p>
-                <p>Or you can hand this burden over to me today.</p>
-                <p>Let’s get you legal, let’s get you safe, and let’s get you back to enjoying the Spain you came here for.</p>
+                <span class="punchline">Done.</span>
+                <p>Stop asking on Facebook groups and getting five different answers. Hand the problem over to someone who deals with this daily.</p>
+                <p>I get your file moved from "pending" to "approved" so you can get on with your life in Spain.</p>
             </div>
         </div>
     </section>
@@ -286,28 +277,28 @@
     <section id="contact">
         <div class="container split-section">
             <div class="section-title">
-                <h2>Let's Talk</h2>
+                <h2>Contact</h2>
             </div>
             <div class="section-content">
-                <span class="punchline">Tell me what's keeping you awake.</span>
-                <p>Fill in the form below and I'll tell you how we can fix it.</p>
+                <span class="punchline">Tell me what you need.</span>
+                <p>Fill in the details below.</p>
                 
                 <form class="contact-form" action="https://formspree.io/f/TU_CODIGO_AQUI" method="POST">
                     
-                    <input type="hidden" name="_subject" value="Nuevo Lead desde la Web (Dolores Fixer)">
+                    <input type="hidden" name="_subject" value="New Lead (Dolores Fixer)">
 
                     <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required placeholder="Jane Doe">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="_replyto" required placeholder="jane@example.com">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="_replyto" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="status">I am currently...</label>
+                        <label for="status">Status</label>
                         <select id="status" name="status">
                             <option value="Non-EU">Non-EU Citizen (UK, USA, etc)</option>
                             <option value="EU">EU Citizen</option>
@@ -316,22 +307,22 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="needs">I need help with (Select main issue)</label>
+                        <label for="needs">Requirement</label>
                         <select id="needs" name="needs">
                             <option value="TIE/Residency">TIE Appointment / Residency</option>
                             <option value="Licence">Driving Licence Exchange</option>
                             <option value="Healthcare">SIP Card / Healthcare</option>
                             <option value="Digital">Cl@ve PIN / Digital Cert</option>
-                            <option value="Everything">I am lost (Help with everything)</option>
+                            <option value="Other">Other Inquiry</option>
                         </select>
                     </div>
 
                     <div class="form-group">
-                        <label for="message">Briefly describe your situation</label>
-                        <textarea id="message" name="message" rows="4" placeholder="e.g. I have been trying to get an appointment for 3 weeks..."></textarea>
+                        <label for="message">Details</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Briefly explain your situation..."></textarea>
                     </div>
 
-                    <button type="submit" class="btn" style="width:100%">Send to Dolores</button>
+                    <button type="submit" class="btn" style="width:100%">Send Inquiry</button>
                 </form>
             </div>
         </div>
@@ -339,7 +330,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Dolores Seaguer. All rights reserved.<br>Bureaucracy Fixer & Expat Services.</p>
+            <p>&copy; 2026 Dolores Seaguer.<br>Bureaucracy Fixer.</p>
         </div>
     </footer>
 
