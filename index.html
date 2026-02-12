@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TBF | The Bureaucracy Fixers</title>
+    <title>The Bureaucracy Fixers | Spain</title>
     <style>
         /* RESET & BASICS */
         :root {
             --bg-color: #ffffff;
-            --text-color: #111111;
-            /* Azul Turquesa */
+            --text-color: #222222;
+            /* TU COLOR FAVORITO: AZUL TURQUESA */
             --accent-color: #00B5AD; 
-            --accent-hover: #00968F; 
-            --gray-light: #f8f9fa;
+            --accent-hover: #008f8a; 
+            --gray-light: #f9f9f9;
             --gray-text: #555555;
             --spacing-unit: 80px;
         }
@@ -27,7 +27,7 @@
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
-            line-height: 1.5;
+            line-height: 1.6;
             -webkit-font-smoothing: antialiased;
         }
 
@@ -35,49 +35,51 @@
         h1, h2, h3 {
             font-weight: 700;
             letter-spacing: -0.02em;
-            line-height: 1.1;
+            line-height: 1.2;
         }
 
         h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem); 
-            margin-bottom: 20px;
+            font-size: clamp(2.2rem, 5vw, 3.8rem); 
+            margin-bottom: 25px;
+            color: #111;
         }
 
         h2 {
             font-size: 1.1rem;
             text-transform: uppercase;
             letter-spacing: 0.05em;
-            margin-bottom: 10px;
-            border-bottom: 2px solid var(--accent-color);
+            margin-bottom: 15px;
+            /* Detalle Turquesa Sutil */
+            border-bottom: 3px solid var(--accent-color);
             display: inline-block;
             padding-bottom: 5px;
         }
 
         .punchline {
-            font-size: 1.4rem;
-            font-weight: 700;
+            font-size: 1.3rem;
+            font-weight: 600;
             margin-bottom: 15px;
             display: block;
-            color: var(--accent-color);
+            color: var(--accent-color); /* El toque de color justo */
         }
 
         p {
             font-size: 1.05rem;
-            margin-bottom: 15px;
-            color: #333;
+            margin-bottom: 18px;
+            color: #444;
             max-width: 650px;
         }
 
         /* LAYOUT CONTAINERS */
         .container {
-            max-width: 1100px;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 25px;
         }
 
         section {
             padding: var(--spacing-unit) 0;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #f0f0f0;
         }
 
         /* HEADER */
@@ -85,9 +87,10 @@
             padding: 40px 0;
         }
         .logo {
-            font-weight: 700;
-            font-size: 1.2rem;
-            letter-spacing: -0.02em;
+            font-weight: 800;
+            font-size: 1.3rem;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
         }
         .logo span {
              color: var(--accent-color);
@@ -95,12 +98,12 @@
 
         /* HERO SECTION */
         .hero {
-            padding: 80px 0 100px 0;
+            padding: 60px 0 90px 0;
         }
         .hero-sub {
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             color: var(--gray-text);
-            margin-bottom: 40px;
+            margin-bottom: 35px;
             font-weight: 400;
         }
 
@@ -108,33 +111,34 @@
         .split-section {
             display: grid;
             grid-template-columns: 1fr 2fr; 
-            gap: 40px;
+            gap: 50px;
         }
 
         @media (max-width: 768px) {
             .split-section {
                 grid-template-columns: 1fr;
-                gap: 20px;
+                gap: 30px;
             }
             :root {
-                --spacing-unit: 50px;
+                --spacing-unit: 60px;
             }
         }
 
         /* LISTS */
         ul.services-list {
             list-style: none;
-            margin-top: 20px;
+            margin-top: 25px;
         }
         ul.services-list li {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             padding-left: 20px;
-            border-left: 3px solid var(--accent-color);
+            border-left: 4px solid var(--accent-color); /* Línea lateral turquesa */
         }
         ul.services-list strong {
             display: block;
             font-size: 1.1rem;
-            margin-bottom: 4px;
+            margin-bottom: 5px;
+            color: #222;
         }
 
         /* BUTTONS */
@@ -142,19 +146,20 @@
             display: inline-block;
             background-color: var(--accent-color);
             color: #fff;
-            padding: 16px 32px;
+            padding: 16px 34px;
             font-size: 1rem;
             font-weight: 600;
             text-decoration: none;
             transition: all 0.2s ease;
-            margin-top: 10px;
+            margin-top: 15px;
+            border-radius: 3px;
             border: none;
             cursor: pointer;
-            border-radius: 2px;
         }
         .btn:hover {
             background-color: var(--accent-hover);
-            transform: translateY(-1px);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 181, 173, 0.2);
         }
 
         /* FORM */
@@ -162,7 +167,8 @@
             background-color: var(--gray-light);
             padding: 40px;
             margin-top: 20px;
-            border-radius: 4px;
+            border-radius: 6px;
+            border: 1px solid #eee;
         }
         .form-group {
             margin-bottom: 20px;
@@ -176,27 +182,27 @@
         }
         input, select, textarea {
             width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
+            padding: 14px;
+            border: 1px solid #ddd;
             font-family: inherit;
             font-size: 1rem;
             background: #fff;
             transition: border-color 0.3s;
-            border-radius: 2px;
+            border-radius: 4px;
         }
         input:focus, select:focus, textarea:focus {
             outline: none;
             border-color: var(--accent-color);
-            border-width: 2px;
-            padding: 11px; /* Adjust for border width change */
+            box-shadow: 0 0 0 3px rgba(0, 181, 173, 0.1);
         }
 
         /* FOOTER */
         footer {
-            padding: 40px 0;
+            padding: 50px 0;
             text-align: center;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: var(--gray-text);
+            border-top: 1px solid #eee;
         }
     </style>
 </head>
@@ -204,28 +210,27 @@
 
     <header>
         <div class="container">
-            <div class="logo">TBF | <span>The Bureaucracy Fixers</span></div>
+            <div class="logo">The Bureaucracy <span>Fixers</span></div>
         </div>
     </header>
 
     <section class="hero">
         <div class="container">
-            <h1>Spanish Paperwork.<br>Sorted.</h1>
-            <p class="hero-sub">You can’t get an appointment. You don’t speak the language. I fix both.</p>
-            <a href="#contact" class="btn">Get it Sorted</a>
+            <h1>Love Spain.<br>Hate the Paperwork?</h1>
+            <p class="hero-sub">We navigate the system so you don't have to.</p>
+            <a href="#contact" class="btn">Get Help Today</a>
         </div>
     </section>
 
     <section>
         <div class="container split-section">
             <div class="section-title">
-                <h2>The Situation</h2>
+                <h2>The Challenge</h2>
             </div>
             <div class="section-content">
-                <span class="punchline">Bureaucracy is slow.</span>
-                <p>Spanish administration is infamous for a reason. Websites crash, appointments are non-existent, and the rules seem to change depending on who is sitting at the desk.</p>
-                <p>Trying to navigate this alone without fluent Spanish is inefficient. You risk being turned away for a minor error, forcing you to start the process all over again.</p>
-                <p><strong>You don't need a "dream"; you need a stamp on your document.</strong></p>
+                <span class="punchline">It's complicated.</span>
+                <p>We know that dealing with Spanish administration can be frustrating. Between scarce appointments, language barriers, and constantly changing requirements, it is easy to feel stuck.</p>
+                <p>Many expats find themselves spending days trying to secure a simple document. It shouldn't be this hard to get settled.</p>
             </div>
         </div>
     </section>
@@ -233,28 +238,28 @@
     <section>
         <div class="container split-section">
             <div class="section-title">
-                <h2>What I Do</h2>
+                <h2>How We Help</h2>
             </div>
             <div class="section-content">
-                <span class="punchline">Straightforward solutions.</span>
-                <p>I am not a lawyer. I am a specialist in getting things done. I know the system, I know the offices, and I know how to secure appointments that don't appear online.</p>
+                <span class="punchline">Experience & Access.</span>
+                <p>We are a dedicated team that understands the ins and outs of the local offices. We don't promise magic; we promise competence and perseverance.</p>
                 
                 <ul class="services-list">
                     <li>
-                        <strong>Appointments (Cita Previa)</strong>
-                        Securing slots for TIE (Non-EU), EU Certificates, and Biometrics. I monitor the system so you don't have to waste your mornings refreshing the page.
+                        <strong>Appointment Booking</strong>
+                        We monitor the systems daily to secure appointments for TIE, Residency, and EU Certificates as soon as they become available.
                     </li>
                     <li>
-                        <strong>Document Review</strong>
-                        I provide a precise checklist for your specific case. I ensure your documents, dates, and translations are correct <em>before</em> you walk into the office.
+                        <strong>Document Preparation</strong>
+                        We review your paperwork to ensure you have exactly what is required—correct translations, valid dates, and the right forms—to avoid rejection.
                     </li>
                     <li>
-                        <strong>Digital Admin</strong>
-                        Setup of Cl@ve PIN and Digital Certificate to handle future taxes and registry issues online.
+                        <strong>Digital Setup</strong>
+                        Assistance with Cl@ve PIN and Digital Certificates, essential for handling your taxes and administration online.
                     </li>
                     <li>
-                        <strong>In-Person Accompaniment</strong>
-                        I can attend the appointment with you. I speak to the officials, handle any misunderstandings on the spot, and ensure the process is completed.
+                        <strong>Personal Accompaniment</strong>
+                        For those who prefer support in person, we can attend appointments with you to translate and facilitate the process.
                     </li>
                 </ul>
             </div>
@@ -264,76 +269,5 @@
     <section>
         <div class="container split-section">
             <div class="section-title">
-                <h2>The Result</h2>
+                <h2>The Goal</h2>
             </div>
-            <div class="section-content">
-                <span class="punchline">Done.</span>
-                <p>Stop asking on Facebook groups and getting five different answers. Hand the problem over to someone who deals with this daily.</p>
-                <p>I get your file moved from "pending" to "approved" so you can get on with your life in Spain.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container split-section">
-            <div class="section-title">
-                <h2>Contact</h2>
-            </div>
-            <div class="section-content">
-                <span class="punchline">Tell me what you need.</span>
-                <p>Fill in the details below.</p>
-                
-                <form class="contact-form" action="https://formspree.io/f/TU_CODIGO_AQUI" method="POST">
-                    
-                    <input type="hidden" name="_subject" value="New Lead (The Fixer)">
-
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="_replyto" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="status">Status</label>
-                        <select id="status" name="status">
-                            <option value="Non-EU">Non-EU Citizen (UK, USA, etc)</option>
-                            <option value="EU">EU Citizen</option>
-                            <option value="Family">Family Member of EU Citizen</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="needs">Requirement</label>
-                        <select id="needs" name="needs">
-                            <option value="TIE/Residency">TIE Appointment / Residency</option>
-                            <option value="Licence">Driving Licence Exchange</option>
-                            <option value="Healthcare">SIP Card / Healthcare</option>
-                            <option value="Digital">Cl@ve PIN / Digital Cert</option>
-                            <option value="Other">Other Inquiry</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Details</label>
-                        <textarea id="message" name="message" rows="3" placeholder="Briefly explain your situation..."></textarea>
-                    </div>
-
-                    <button type="submit" class="btn" style="width:100%">Send Inquiry</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 The Bureaucracy Fixers.</p>
-        </div>
-    </footer>
-
-</body>
-</html>
-
